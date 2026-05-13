@@ -14,7 +14,7 @@ model = genai.GenerativeModel(
     "gemini-2.5-flash",
     generation_config={
         "temperature": 0.3,
-        "max_output_tokens": 2500,
+        "max_output_tokens": 5000,
     }
 )
 
@@ -66,7 +66,7 @@ Rules:
 - Answer the user’s grant questions directly.
 - Use professional grant application language.
 - Use headings and bullet points.
-- For "Concise Full Draft", answer all questions in a complete draft between 700 and 1200 words.
+- For "Concise Full Draft", answer all questions in a complete draft between 3000 and 5000 words.
 - Do not stop halfway.
 - Include a projected budget table if budget is requested.
 - If information is missing, write [NEEDS CONFIRMATION].
