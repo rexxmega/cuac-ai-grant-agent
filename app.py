@@ -13,8 +13,8 @@ genai.configure(api_key=api_key)
 model = genai.GenerativeModel(
     "gemini-2.5-flash",
     generation_config={
-        "temperature": 0.4,
-        "max_output_tokens": 900,
+        "temperature": 0.3,
+        "max_output_tokens": 2500,
     }
 )
 
@@ -57,18 +57,18 @@ Mission: {CUAC_INFO['mission']}
 Goals: {', '.join(CUAC_INFO['goals'])}
 
 Task:
-Generate only this section: {section}
+Generate this section: {section}
 
 Event / Grant Details:
 {user_input}
 
 Rules:
-- Be concise and professional.
-- Use real grant application style.
-- Use professional grant-writing structure and formatting.
-- If section is "Concise Full Draft", generate a detailed but concise grant draft between 700–1200 words.
-- Otherwise keep answers under 350 words.
-- If generating a budget, use a simple table.
+- Answer the user’s grant questions directly.
+- Use professional grant application language.
+- Use headings and bullet points.
+- For "Concise Full Draft", answer all questions in a complete draft between 700 and 1200 words.
+- Do not stop halfway.
+- Include a projected budget table if budget is requested.
 - If information is missing, write [NEEDS CONFIRMATION].
 """
 
