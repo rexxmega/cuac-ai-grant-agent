@@ -65,8 +65,9 @@ Event / Grant Details:
 Rules:
 - Be concise and professional.
 - Use real grant application style.
-- Do not write a long report.
-- Keep the answer under 450 words.
+- Use professional grant-writing structure and formatting.
+- If section is "Concise Full Draft", generate a detailed but concise grant draft between 700–1200 words.
+- Otherwise keep answers under 350 words.
 - If generating a budget, use a simple table.
 - If information is missing, write [NEEDS CONFIRMATION].
 """
